@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+header{
+    background-color: blueviolet;
+    color: white;
+    padding: 2rem 0;
+}
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+  
+
+}
+
+li{
+    list-style-type: none;
+    margin: 0 1rem;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 2rem 0;
+    justify-self: flex-end;
+}
+
+p{
+    text-align: center;
+}
