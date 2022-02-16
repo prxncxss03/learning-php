@@ -1,0 +1,39 @@
+:root{
+    --clr-header: #282a36;
+    --clr-text-primary: white;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    background-color: var(--clr-header);
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-text-primary);
+}
+
+nav{
+    width: 20rem;
+    padding: 0 0.5rem 0 0;
+}
