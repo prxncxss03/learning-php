@@ -1,4 +1,5 @@
 <?php
+    echo "Hi Princess";
     if (isset($_POST['submit'])){
         $file = $_FILES['file'];
         $name = $_FILES['file']['name']; // find file name
@@ -13,14 +14,14 @@
 
         //Allowed Extensions
         $isAllowed = array('jpg', 'jpeg', 'pdf', 'png');
-
+        
         //0 = no error , 1 = error
         if (in_array($fileExtension, $isAllowed)){
             if ($error === 0){
                 if ($size < 30000){
                     //to avoid overriding of files
                     $newFileName = uniqid('', true) . "." . $fileExtension;
-                    $fileDestination = "d4-SUPERGLOBALS/uploads". $newFileName;
+                    $fileDestination = "d4-SUPERGLOBALS/uploads/$newFileName";
                     move_uploaded_file($tmp_name, $fileDestination);
                     header("Location: file.php?uploadedsuccess");
                 } else{

@@ -43,20 +43,35 @@
     
     echo "<br><br>";
     //Exercise 4: Lowercase check
-    $str = "PriNcess YOW";
+    $str = "PriNcess YOW" . "<br><br>";
     function lowercaseCheck($string){
         return strtolower($string);
     }
     echo lowercaseCheck($str);
     //Exercise 5: Search inside of a text
-    $barneySong = "Oh I like red! It's the color of an apple. I like orange, it's the color of an orange. Yellow, It the color of a yellow.";
-    function searchText($string, $punctuations=0){
+    $barneySong = "Oh I like red! It's the color of an apple. I like orange, it's the color of an orange.";
+    echo "text: <br>" . $barneySong . "<br>";
+    // function searchText($string, $punctuations=0){
+    //     // $pattern = "/\.|!|'/";
+    //     // preg_match_all($pattern, $string, $matches);
+    //     // echo "The text has " . count($matches[0]) . " punctuations.";
+    //     for ($char = 0; $char < strlen($string);$char++){
+    //         $listOfPunctuations = array(".", ",","?",";","!",":","'","(",")","[","]","\"","-","_","/","@","{","}","*");
+    //         if (in_array($string[$char], $listOfPunctuations)){
+    //             $punctuations++;
+    //         }
+    //     }
+    //     echo "<br>";
+    //     echo "The text has " . $punctuations . " punctuations.";
+    // }
+    // searchText($barneySong);
+    function searchText($str, $punctuations=0){
         // $pattern = "/\.|!|'/";
         // preg_match_all($pattern, $string, $matches);
         // echo "The text has " . count($matches[0]) . " punctuations.";
-        for ($char = 0; $char < strlen($string);$char++){
+        for ($char = 0; $char < strlen($str);$char++){
             $listOfPunctuations = array(".", ",","?",";","!",":","'","(",")","[","]","\"","-","_","/","@","{","}","*");
-            if (in_array($string[$char], $listOfPunctuations)){
+            if (in_array($str[$char], $listOfPunctuations)){
                 $punctuations++;
             }
         }

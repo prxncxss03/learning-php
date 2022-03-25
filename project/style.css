@@ -11,6 +11,11 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
 }
 header{
     background-color: var(--clr-header);
@@ -36,4 +41,22 @@ a{
 nav{
     width: 20rem;
     padding: 0 0.5rem 0 0;
+}
+
+.test{
+    background-color: var(--clr-header);
+    color: var(--clr-text-primary);
+}
+
+.login-wrapper{
+    background-color: var(--clr-text-primary);
+    display: flex;
+   
+}
+
+
+
+.login-wrapper form{
+    display: flex;
+    flex-direction: column;
 }
